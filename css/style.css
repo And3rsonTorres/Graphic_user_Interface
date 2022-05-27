@@ -1,0 +1,128 @@
+/*
+File: style.css
+GUI Assignment: First Webpage 
+Anderson Torres UMass Lowell Computer Science Studnet, Anderson_torres.student.uml.edu
+Copyright (c) 2022 by ATO. All rights reserved. May you as long as you credit the author.
+Here i create a Website of things that i am interested in and give some infromation about myself
+*/
+
+
+/*global settingfor the website with image bbackground
+*/
+
+
+/*background image copywrite free from https://unsplash.com/photos/QMDap1TAu0g
+create by Patrick Tomasso*/
+
+body {
+    font: 18px Arial, Helvetica, sans-serif;
+    margin: auto;
+    background-image: url("../images/patrick-tomasso-QMDap1TAu0g-unsplash.jpg");
+    background-size: 99%;
+    background-blend-mode: screen;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.label {
+    width: 80%;
+    margin: 20px;
+    overflow: hidden;
+}
+
+iframe {
+    border-radius: 12px;
+}
+
+aside {
+    position: fixed;
+    bottom: 10%;
+    left: 65%;
+    width: 40%;
+    text-align: center;
+}
+
+#youtube {
+    position: relative;
+    bottom: 15%;
+    right: 25%;
+}
+
+#discord {
+    font-size: 50px;
+}
+
+#gallery img {
+    max-width: 60%;
+    height: auto;
+}
+
+
+/*setting buttons for sidebarlinks to be red and round with a change in size when hover it*/
+
+button {
+    height: 20px;
+    background: #e9dcdc;
+    border: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-top: 0px;
+    color: #d31818;
+}
+
+button:hover {
+    color: #220eda;
+    font-size: larger;
+    font-weight: bold;
+}
+
+table {
+    text-align: center;
+    border: 3px dashed #e96021e0;
+    border-radius: 5px;
+}
+
+
+/*changin differnet aspects of the header to make it more animated/enjoyable*/
+
+header {
+    background: #af1e1e;
+    color: #000000;
+    padding-top: 10px;
+    text-transform: uppercase;
+    border-bottom: #0c24f7 3px solid;
+}
+
+header a {
+    color: #fff9fa;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 20px;
+}
+
+a:hover {
+    color: #220eda;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+/*Anderson T, All Brands/Websites use in this document are not owned by the author and are use for edcational purpose only Copyright &copy;2022*/
