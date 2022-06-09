@@ -1,0 +1,184 @@
+/*
+File: pacific.css
+GUI Assignment: HW2 gui I
+Anderson Torres UMass Lowell Computer Science Studnet, Anderson_torres.student.uml.edu
+Copyright (c) 2022 by ATO. All rights reserved.
+Changing a HTML by just using css
+*/
+
+
+/* part of professor solution??? just added display inline myself */
+
+header,
+hgroup,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+    display: inline;
+}
+
+
+/*
+header of the page
+editing the header to accomodate the background 
+picture and the coler similar or exactly like the example website
+*/
+
+header h1 {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.808);
+    background-image: url("sunset.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+
+/*
+body of the page
+using provided background-color to hide the lack of the background patern 
+in the bottom of the page. adjusting the width of the page to be centered on the page
+*/
+
+body {
+    background-color: #00569f;
+    background-image: url("ptrbackground.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    margin: auto;
+    padding: auto;
+    min-width: 600px;
+}
+
+
+/*
+image on id content 
+making the picture flow becuase the text needs to be in between the white space and the image
+plus adding some space so the images doesnt overlaped with anything
+*/
+
+img {
+    float: left;
+    margin-right: 20px;
+}
+
+
+/*
+unorderred list on navigation bar
+setting the navbar in the left side of the page and removing its decorations(fancy stuff)
+making bigger for readibility and a nice black color to constrast with the bbackground.
+adding space where it needs to have to match sample page
+***wasn't able to match the re-sizing of the heigth of the background. and color didnt mathc perfectly***
+*/
+
+nav ul {
+    font-size: 1.2em;
+    float: left;
+    list-style: none;
+    font-weight: bolder;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 170px;
+    height: 617px;
+    background-color: #66c3f1;
+}
+
+
+/*
+change the color of visted links
+*/
+
+nav a:visited {
+    color: #344873;
+}
+
+
+/*
+change the color of links is mouse is over it.
+*/
+
+nav a:hover {
+    color: #FFFFFF;
+}
+
+ul a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/*
+changing the bullet points into a gif imaage provide by the professor
+*/
+
+#content ul {
+    list-style-image: url("marker.gif");
+}
+
+
+/*end of NAV and UL section*/
+
+
+/*
+added some padding and color to the headings 1 and 2 
+and the fonts were provided by the professor
+*/
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+h2 {
+    color: #3399CC;
+}
+
+
+/*
+change the font of part of the resort class,and the font it larger and bold no mcuh to do here
+*/
+
+.resort {
+    color: #3399CC;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+/*wrapper div id that covert mostly the entire page and 
+thanks to it we can update the background and make it double tone.
+helps align the information displayed on the paage as well*/
+
+#wrapper {
+    background-color: white;
+    align-content: center;
+}
+
+
+/*
+provided by the professor
+
+*/
+
+#contact {
+    font-size: 90%;
+}
+
+dt {
+    color: #000033;
+}
+
+footer {
+    font-family: Georgia, "Times New Roman", serif;
+}
