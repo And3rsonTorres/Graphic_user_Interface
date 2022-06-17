@@ -1,0 +1,57 @@
+/*
+style.css
+GUI Assignment: Multiplication table
+Anderson Torres UMass Lowell Computer Science Student, Anderson_torres.student.uml.edu
+Copyright (c) 2022 by ATO. All rights reserved. May you as long as you credit the author.
+Here is a little multiplication table.*/
+/*universal font size*/
+*
+{
+    font-size: 20px;
+}
+/*gray background behind the form*/
+.container
+{
+    background-color:rgb(48, 62, 62);
+}
+/*changing the table color adding a nice boder*/
+table {
+    text-align: center;
+    border: 10px inset;
+    color:rgb(233, 1, 1);
+    overflow:scroll;
+}
+/*making the primary rows and collumns more visible*/
+table tr:first-child, table td:first-child
+{
+background:black;
+}
+/*bigger boder for all rows and columns*/
+table tr,table td
+{
+    border:3px solid    
+}
+/*scrowlability for easier visualization */
+#tables{
+    padding:5px;
+    margin:5px;
+    overflow:scroll;
+    width: 80%;
+    height: 500px;
+    
+}
+/*increason*/
+#form
+{
+font-size:22px;
+}
+/*making the botton a little fun*/
+button:hover
+{
+font-weight:bold;
+}
+/*centralizing footer*/
+footer {
+text-align:center;
+text-transform:italic;
+}
