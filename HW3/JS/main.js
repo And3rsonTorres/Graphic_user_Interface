@@ -89,7 +89,7 @@ function tableGen() {
       if(isNaN(x)) throw "not a number -499 to 499 please";
       x = Number(x);
       
-      if(x > 500&& x >-500) throw "too high try again";
+      if(x > 500 && x <-500) throw "too high try again";
         
     }
     catch(error) {
