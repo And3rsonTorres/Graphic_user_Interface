@@ -76,7 +76,7 @@ function tableGen() {
      
    }
    //function that generate the error code depending on the input
-   // will print give the user the first problem with the input
+   // will give the user the first problem with the input number
    function textError(input) {
     
     const message = document.getElementById("error");
@@ -89,7 +89,7 @@ function tableGen() {
       if(isNaN(x)) throw "not a number -499 to 499 please";
       x = Number(x);
       
-      if(x > 500 && x <-500) throw "too high try again";
+      if(x > 500 && x <500) throw "too high try again";
         
     }
     catch(error) {
