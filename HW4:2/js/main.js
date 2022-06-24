@@ -140,7 +140,7 @@ $("#form").validate({
 
 
 });
-//sliders that go 1 by 1 with max and min matching form 1st bind
+//sliders that go 1 by 1 with max and min matching form. 1st bind to the data
 $("#row1").slider({
   value: 0,
   step: 1,
@@ -181,7 +181,7 @@ $("#column2").slider({
     update();
   }
 })
-// 2nd binding num in form will make match in the slider
+// 2nd binding to the data. numbers in the form will match the ones inside the slider
 //as long as it is whithin max and min
 $("#1").change(function () {
   var item = this.value;
@@ -212,8 +212,9 @@ $("#4").change(function () {
   }
 })
 
-//table work
+//JQ ope tabs
 $("#tab").tabs();
+// create a new tab
 function newTab(table, label) {
   var tabId = "tab-" + nTab;
   var panelId = "tab-panel-" + nTab;
@@ -221,10 +222,10 @@ function newTab(table, label) {
   // Create new panel div.
   $("#tab > div.panels").append("<div id=\"" + panelId + "\"></div>");
 
-  // Create li that represents the new tab. Its href is set to the new panel div.
-  $("#tab ul").append("<li id=\"" + tabId + "\"><a href=\"#" + panelId + "\"><div>" + label + "</div></a><img src=\"img/closeicon.png\" class=\"ui-icon ui-icon-close\" role=\"presentation\"><input type=\"checkbox\" class=\"tabCheckBox\"></li>");
+  // Create li that represents the new tab.
+  $("#tab ul").append("<li id=\"" + tabId + "\"><a href=\"#" + panelId + "\"><div>" + label + "</div></a><img src=\"https://and3rsontorres.github.io/Graphic_user_Interface/HW4:2/img/closeicon.png\" class=\"ui-icon ui-icon-close\" role=\"presentation\"><input type=\"checkbox\" class=\"tabCheckBox\"></li>");
 
-  // Let jQuery process the new li.
+  // process the new li
   $("#tab").tabs("refresh");
 
   // Insert the table into the new panel div.
@@ -238,7 +239,7 @@ function newTab(table, label) {
 }
 
 
-// Selects a tab by the ID of its contents div.
+// Selects a tab by the ID
 function selectTab(Id) {
   var i = $("#tab a[href='#" + Id + "']").parent().index();
   $("#tab").tabs("option", "active", i);
@@ -248,7 +249,7 @@ function selectTab(Id) {
 function generateTabLabel() {
   return parseInt(form.elements[1].value) + " &minus; " + parseInt(form.elements[3].value) + "<br>" + parseInt(form.elements[0].value) + " &minus; " + parseInt(form.elements[2].value);
 }
-//update the sliding or type table.
+//update the table by sliding or type table.
 function update() {
   if (!$("#form").valid()) {
     return;
@@ -284,7 +285,7 @@ function deleteSelectedTabs() {
     }
   });
 }
-//use the icon x to delete pretty small hit box 
+//use the icon x to delete 
 $("#tab").delegate("img.ui-icon-close", "click", function () {
   var panelId = $(this).closest("li").remove().attr("aria-controls");
   $("#" + panelId).remove();
