@@ -1,0 +1,71 @@
+<!--
+File: index.html
+GUI Assignment: Multiplication table
+Anderson Torres UMass Lowell Computer Science Student, Anderson_torres.student.uml.edu
+Copyright (c) 2022 by ATO. All rights reserved. May you as long as you credit the author.
+Here is a little multiplication tableV2.
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>What a Table | welcome</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<header>
+    <div class="label">
+        <div class="mt-6 p-5 bg-primary text-white rounded text-center ">
+            <h1>This is a Multiplication Table </h1>
+        </div>
+    </div>
+</header>
+<body class="container-fluid">
+<!--form that display and is used to create the table using IDs to manage the DOM -->
+    <form class="container form-group " id="form" method="GET" >
+        <label class="label label-info">ENTER STARTING COLUMN:</label><br>
+        <input id=1 type="text" name="column"  placeholder="100" ><br>
+
+        <label class="label label-info">ENTER STARTING ROW:</label><br>
+        <input id=2 type="text"name="row" placeholder="100" ><br>
+
+        <label class="label label-info">NUMBER OF COLUMNS:</label><br>
+        <input id=3 type="text"name="row2" placeholder="100" ><br>
+   
+        <label class="label label-info">NUMBER OF ROWS:</label><br>
+        <input id=4 type="text" name="column2" placeholder="100" >
+  
+        <button class= "btn btn-primary  btn-lg"
+        type= "submit ">Let's Multiply</button>
+
+    </form>
+    <!--this is where the tables will be place-->
+<section id="table">
+    <!--previous error-->
+    <p class="h4  text-danger"id="error"></p>
+</section>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script>
+    
+</script>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>  
+<script src="JS/main.js" ></script>
+<footer>
+        <p>Anderson T, for edcational purpose only Copyright&copy;2022</p>
+        <p>
+
+    </footer>
+</body>
