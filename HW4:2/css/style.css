@@ -1,0 +1,84 @@
+/*
+style.css
+GUI Assignment: Multiplication table
+Anderson Torres UMass Lowell Computer Science Student, Anderson_torres.student.uml.edu
+Copyright (c) 2022 by ATO. All rights reserved. May you as long as you credit the author.
+Here is a little multiplication table.V3*/
+/*universal font size*/
+*
+{
+    font-size: 20px;
+}
+/*gray background behind the form*/
+.container
+{
+    background-color:rgb(170, 230, 230);
+}
+/*changing the table color adding a nice boder*/
+table {
+    text-align: center;
+    border: 10px inset;
+    color:rgb(202, 38, 38);
+    overflow:scroll;
+}
+/*making the primary rows and collumns more visible*/
+table tr:first-child, table td:first-child
+{
+background:black;
+}
+/*change background for this iteration*/
+table td:nth-child(even)
+{
+background: rgb(102, 190, 214);
+
+}
+/*bigger boder for all rows and columns*/
+table tr,table td
+{
+    border:3px solid    
+}
+
+/*scrowlability for easier visualization */
+.panels{
+    padding:5px;
+    margin:5px;
+    overflow:scroll;
+    width: 80%;
+    height: 200px;
+    
+}
+/*elimitating ugly siluete */
+#tab
+{
+    height: 0px;
+}
+/*increasing size*/
+#form
+{
+font-size:22px;
+
+}
+/*making the botton a little fun*/
+button:hover
+{
+font-weight:bold;
+}
+/*centralizing footer*/
+footer {
+text-align:center;
+text-transform:italic;
+}
+/*making the alert red*/
+span{
+    color:red;
+    font:larger;
+}
+
+/*touching up the slider*/
+.slider
+{
+width:262px;
+background:white;
+outline:none;
+opacity: 1;
+}
