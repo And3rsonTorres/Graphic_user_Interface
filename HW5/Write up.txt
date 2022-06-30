@@ -1,0 +1,6 @@
+Good night my scrabble page ended up being basic even thought I tried to put some features in it.
+Right now you can continue the game until the end, white space is not allow. Blank tiles will count towards any other tile you can select. The dictionary works at the moment I got it from a text file as my Mac dictionary didn't want to work well with the page. One bug is that the work score and remaining despair as soon as first letter is put into the board.(will work on it). 
+
+Pretty much this was a challenging development as it consist of such fine tune structure that anything wrong will cause a problem. I added the images in the array because I was having problems loading them later on.
+
+Anderson Torres

@@ -1,0 +1,81 @@
+<!--
+File: index.html
+GUI Assignment: Multiplication table
+Anderson Torres UMass Lowell Computer Science Student, Anderson_torres.student.uml.edu
+Copyright (c) 2022 by ATO. All rights reserved. May you as long as you credit the author.
+here you can see a demostration of one line scramble.
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Scramble HW5</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<!--container just to add background-->
+
+<body id="container">
+    <article>
+        <h1>Scrabble: find your word</h1>
+        <!--for degugging purposes-->
+        <div id="error">
+        </div>
+        <!--score tracker here and all other line function for scralbble-->
+        <div id="scoreKeeper">
+            <div>
+                <div class="label">Word:</div>
+                <div id="word"></div>
+            </div>
+            <div>
+                <div class="label">Score:</div>
+                <div id="score">0</div>
+            </div>
+            <div>
+                <div class="label">Remaining Letters:</div>
+                <div id="remaining"></div>
+            </div>
+            <div>
+                <div class="label">Highest Score:</div>
+                <div id="Scores">&#8281;</div>
+            </div>
+        </div>
+        <div id="line"></div>
+
+        <div id="instruction">
+            <div>NO Gaps.<img id="oneWordCheckIcon" src="img/check.png" class="instructionIcon" alt="Checked" /></div>
+            <div>Min 2 letters.<img id="minLengthIcon" src="img/check.png" class="instructionIcon" alt="Checked" />
+            </div>
+            <div>The must be found on a Dictionary<img id="dictionaryCheckIcon" src="img/check.png"
+                    class="instructionIcon" alt="Checked" /></div>
+        </div>
+
+        <div class="buttons">
+            <button id="nextWordButton">Next Word</button>
+            <button id="restartButton" onclick="restart()">Start Over</button>
+        </div>
+        <div id="hand"></div>
+
+
+
+    </article>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script src="/js/main.js"></script>
+    <footer>
+        <span>
+            <p>Anderson T, for educational purpose only &copy;2022</p>
+        </span>
+    </footer>
+
+
+
+
+
+
+</body>
