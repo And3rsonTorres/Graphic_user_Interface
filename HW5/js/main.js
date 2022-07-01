@@ -409,7 +409,7 @@ isDictionaryWord.dict = {};
 //found a dictionary on github user: dwyl
 // Do an ajax request for the dictionary file.
 $.ajax({
-    url: "/words.txt",
+    url: "https://github.com/And3rsonTorres/Graphic_user_Interface/HW5/words.txt",
     success: function (result) {
         // Get an array of all the words.
         var words = result.split("\n");
